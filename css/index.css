@@ -467,7 +467,7 @@ body {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   body {
-    background-image: linear-gradient(rgba(228, 26, 12, 0.484), rgb(248, 230, 148)), url(MOGO/images/background@x2.jpg);
+    background-image: linear-gradient(rgba(228, 26, 12, 0.484), rgb(248, 230, 148)), url(/MoGo/images/background@x2.jpg);
   }
 }
 @media (max-width: 1200px) {
