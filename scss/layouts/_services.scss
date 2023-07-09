@@ -73,6 +73,7 @@
 
   .services__item {
     margin-bottom: 60px;
+    margin-left: 33px;
   }
 
   .services__title::after {
@@ -87,5 +88,11 @@
 @media (min-width: 768px) and (max-width: 1199px) {
   .services__list {
     grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
+  .services__item {
+    margin-bottom: 60px;
+    margin-left: 0px;
+    padding: 0;
   }
 }
