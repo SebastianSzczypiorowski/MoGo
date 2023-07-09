@@ -26,8 +26,7 @@ label {
 }
 
 body {
-  background-image: linear-gradient($red, $yellow),
-    url(../../images/background.png);
+  background-image: linear-gradient($red, $yellow), url(/images/background.png);
   background-position: center 0px;
   background-repeat: no-repeat;
   background-size: 1600px 700px;
@@ -38,7 +37,7 @@ body {
   (min-resolution: 2dppx) {
   body {
     background-image: linear-gradient($red, $yellow),
-      url(../../images/background@x2\.png);
+      url(/images/background@x2.png);
   }
 }
 
