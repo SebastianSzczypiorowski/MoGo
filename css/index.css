@@ -108,7 +108,7 @@
   }
   .hero__button {
     margin-top: 20px;
-    width: 100px;
+    width: 200px;
     height: 25px;
     font-size: 14px;
   }
@@ -274,7 +274,7 @@
 .team__member-image {
   display: block;
   width: 100%;
-  height: auto;
+  height: 430px;
 }
 
 .team__member-figure {
@@ -405,7 +405,7 @@
     margin-top: 20px;
   }
   .footer__button {
-    width: 100%;
+    width: 50%;
   }
   #email {
     width: 100%;
@@ -414,6 +414,14 @@
 @media (min-width: 768px) and (max-width: 1199px) {
   .footer__section-form {
     gap: 10px;
+  }
+  .footer__section-form {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+  }
+  .footer__button {
+    width: 170px;
   }
 }
 section {
@@ -452,7 +460,7 @@ body {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   body {
-    background-image: linear-gradient(rgba(228, 26, 12, 0.484), rgb(248, 230, 148)), url(../../images/background@2x.png);
+    background-image: linear-gradient(rgba(228, 26, 12, 0.484), rgb(248, 230, 148)), url(../../images/background@x2.png);
   }
 }
 @media (max-width: 1200px) {

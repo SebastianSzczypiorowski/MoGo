@@ -60,7 +60,7 @@
   }
 
   .footer__button {
-    width: 100%;
+    width: 50%;
   }
 
   #email {
@@ -71,5 +71,14 @@
 @media (min-width: 768px) and (max-width: 1199px) {
   .footer__section-form {
     gap: 10px;
+  }
+
+  .footer__section-form {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+  }
+  .footer__button {
+    width: 170px;
   }
 }
