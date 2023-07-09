@@ -108,7 +108,7 @@
   }
   .hero__button {
     margin-top: 20px;
-    width: 200px;
+    width: 130px;
     height: 25px;
     font-size: 14px;
   }
@@ -460,7 +460,7 @@ body {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   body {
-    background-image: linear-gradient(rgba(228, 26, 12, 0.484), rgb(248, 230, 148)), url(../../images/background@x2.png);
+    background-image: linear-gradient(rgba(228, 26, 12, 0.484), rgb(248, 230, 148)), url(../../images/background@x2\ .png);
   }
 }
 @media (max-width: 1200px) {
