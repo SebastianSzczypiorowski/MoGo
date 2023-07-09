@@ -1,0 +1,74 @@
+@import "../utils/variables";
+@import "../utils/fonts";
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+.hero__subtitle,
+.hero__title {
+  margin: 0 0 5px;
+  color: $white;
+}
+
+.hero__subtitle {
+  font-size: $HeroSubtitle;
+  font-weight: 500;
+  font-family: $Fasthand, cursive;
+}
+
+.hero__title {
+  width: 500px;
+  font-weight: bold;
+  text-align: center;
+  font-family: $Roboto, sans-serif;
+  font-size: $HeroTitle;
+}
+
+.hero__button {
+  margin-top: 40px;
+  font-size: $Standard;
+  font-weight: 700;
+  cursor: pointer;
+  color: $white;
+  border: 3px solid $white;
+  background-color: transparent;
+  width: 120px;
+  height: 30px;
+}
+
+@media (max-width: 767px) {
+  .hero__content {
+    height: auto;
+  }
+  .hero__subtitle {
+    font-size: $HeroSubtitle - 20;
+  }
+  .hero__title {
+    max-width: 300px;
+    font-size: $HeroTitle - 50;
+  }
+
+  .hero__button {
+    margin-top: 20px;
+    width: 100px;
+    height: 25px;
+    font-size: $Small;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero__title {
+    width: 400px;
+    font-size: $HeroTitle - 2;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__title {
+    width: 500px;
+  }
+}

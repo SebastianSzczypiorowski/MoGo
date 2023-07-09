@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Fasthand&family=Roboto:wght@900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./css/index.min.css" />
 
     <title>MoGo</title>
   </head>
@@ -17,35 +18,37 @@
     <header class="header">
       <section class="header__section">
         <nav class="header__nav">
-          <a href="/index.html" class="header__logo"><h3>MoGo</h3></a>
+          <a class="header__nav-item" href="/index.html"><h3>MoGo</h3></a>
           <ul class="header__menu">
-            <li class="header__menu-item"><a href="/index.html">About</a></li>
-            <li class="header__menu-item"><a href="/index.html">Service</a></li>
-            <li class="header__menu-item"><a href="/index.html">Work</a></li>
-            <li class="header__menu-item"><a href="/index.html">Blog</a></li>
-            <li class="header__menu-item"><a href="/index.html">Contact</a></li>
             <li>
-              <svg
-                class="contact__svg-margin"
-                fill="white"
-                height="16"
-                width="16"
-              >
+              <a class="header__menu-item" href="/index.html">About</a>
+              <p class="header__menu-underline"></p>
+            </li>
+            <li>
+              <a class="header__menu-item" href="/index.html">Service</a>
+            </li>
+            <li>
+              <a class="header__menu-item" href="/index.html">Work</a>
+            </li>
+            <li>
+              <a class="header__menu-item" href="/index.html">Blog</a>
+            </li>
+            <li>
+              <a class="header__menu-item" href="/index.html">Contact</a>
+            </li>
+
+            <li>
+              <svg fill="white" height="16" width="16">
                 <use
-                  class="contact__svg"
+                  class="header__svg"
                   xlink:href="./images/icons.svg#icon-cart"
                 ></use>
               </svg>
             </li>
             <li>
-              <svg
-                class="contact__svg-margin"
-                fill="white"
-                height="16"
-                width="16"
-              >
+              <svg fill="white" height="16" width="16">
                 <use
-                  class="contact__svg"
+                  class="header__svg"
                   xlink:href="./images/icons.svg#icon-search"
                 ></use>
               </svg>
@@ -73,10 +76,7 @@
               height="28"
               width="28"
             >
-              <use
-                class="contact__svg"
-                xlink:href="./images/icons.svg#icon-alarm"
-              ></use>
+              <use xlink:href="./images/icons.svg#icon-alarm"></use>
             </svg>
 
             <h3 class="services__item-title">PHOTOGRAPHY</h3>
@@ -92,10 +92,7 @@
               height="28"
               width="28"
             >
-              <use
-                class="contact__svg"
-                xlink:href="./images/icons.svg#icon-stats-dots"
-              ></use>
+              <use xlink:href="./images/icons.svg#icon-stats-dots"></use>
             </svg>
             <h3 class="services__item-title">WEB DESIGN</h3>
             <p class="services__item-description">
@@ -110,10 +107,7 @@
               height="28"
               width="28"
             >
-              <use
-                class="contact__svg"
-                xlink:href="./images/icons.svg#icon-display"
-              ></use>
+              <use xlink:href="./images/icons.svg#icon-display"></use>
             </svg>
             <h3 class="services__item-title">CREATIVITY</h3>
             <p class="services__item-description">
@@ -128,10 +122,7 @@
               height="28"
               width="28"
             >
-              <use
-                class="contact__svg"
-                xlink:href="./images/icons.svg#icon-book"
-              ></use>
+              <use xlink:href="./images/icons.svg#icon-book"></use>
             </svg>
             <h3 class="services__item-title">SEO</h3>
             <p class="services__item-description">
@@ -146,10 +137,7 @@
               height="28"
               width="28"
             >
-              <use
-                class="contact__svg"
-                xlink:href="./images/icons.svg#icon-home"
-              ></use>
+              <use xlink:href="./images/icons.svg#icon-home"></use>
             </svg>
             <h3 class="services__item-title">CSS/HTML</h3>
             <p class="services__item-description">
@@ -164,10 +152,7 @@
               height="28"
               width="28"
             >
-              <use
-                class="contact__svg"
-                xlink:href="./images/icons.svg#icon-map"
-              ></use>
+              <use xlink:href="./images/icons.svg#icon-map"></use>
             </svg>
             <h3 class="services__item-title">DIGITAL</h3>
             <p class="services__item-description">
@@ -189,100 +174,240 @@
         <ul class="team__list">
           <li class="team__member">
             <figure class="team__member-figure">
+              <div>
+                <img
+                  src="./images/developer.png"
+                  alt="Pictoure of meen with beard"
+                  srcset="./images/developer@x2.png 2x"
+                  class="team__member-image"
+                />
+
+                <div class="team__member-overlay">
+                  <ul class="team__member-socials">
+                    <li>
+                      <a href="https://www.facebook.com">
+                        <svg
+                          class="team__svg"
+                          fill="rgba(218, 102, 93)"
+                          height="28"
+                          width="28"
+                        >
+                          <use
+                            xlink:href="./images/icons.svg#icon-facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com">
+                        <svg
+                          class="team__svg"
+                          fill="rgba(218, 102, 93)"
+                          height="28"
+                          width="28"
+                        >
+                          <use
+                            xlink:href="./images/icons.svg#icon-twitter"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/">
+                        <svg
+                          class="team__svg"
+                          fill="rgba(218, 102, 93)"
+                          height="28"
+                          width="28"
+                        >
+                          <use
+                            xlink:href="./images/icons.svg#icon-instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com">
+                        <svg
+                          class="team__svg"
+                          fill="rgba(218, 102, 93)"
+                          height="28"
+                          width="28"
+                        >
+                          <use
+                            xlink:href="./images/icons.svg#icon-linkedin"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <figcaption class="team__member-caption">
+                <p class="team__member-name">MATTHEW DIX</p>
+                <p class="team__member-role">Graphic Desing</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="team__member">
+            <figure class="team__member-figure">
               <img
-                src="images/developer.png"
-                alt="Facet który programuje"
-                width="350"
-                height="auto"
+                src="./images/developer.png"
+                alt="Pictoure of meen with beard"
+                srcset="./images/developer@x2.png 2x"
+                class="team__member-image"
               />
-              <div class="team__member-description">
+              <div class="team__member-overlay">
                 <ul class="team__member-socials">
                   <li>
-                    <svg
-                      class="team__svg"
-                      fill="rgba(218, 102, 93)"
-                      height="28"
-                      width="28"
-                    >
-                      <use xlink:href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
+                    <a href="https://www.facebook.com">
+                      <svg
+                        class="team__svg"
+                        fill="rgba(218, 102, 93)"
+                        height="28"
+                        width="28"
+                      >
+                        <use
+                          xlink:href="./images/icons.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
                   <li>
-                    <svg
-                      class="team__svg"
-                      fill="rgba(218, 102, 93)"
-                      height="28"
-                      width="28"
-                    >
-                      <use xlink:href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
+                    <a href="https://twitter.com">
+                      <svg
+                        class="team__svg"
+                        fill="rgba(218, 102, 93)"
+                        height="28"
+                        width="28"
+                      >
+                        <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li>
-                    <svg
-                      class="team__svg"
-                      fill="rgba(218, 102, 93)"
-                      height="28"
-                      width="28"
-                    >
-                      <use xlink:href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
+                    <a href="https://www.instagram.com/">
+                      <svg
+                        class="team__svg"
+                        fill="rgba(218, 102, 93)"
+                        height="28"
+                        width="28"
+                      >
+                        <use
+                          xlink:href="./images/icons.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
                   <li>
-                    <svg
-                      class="team__svg"
-                      fill="rgba(218, 102, 93)"
-                      height="28"
-                      width="28"
-                    >
-                      <use xlink:href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
+                    <a href="https://www.linkedin.com">
+                      <svg
+                        class="team__svg"
+                        fill="rgba(218, 102, 93)"
+                        height="28"
+                        width="28"
+                      >
+                        <use
+                          xlink:href="./images/icons.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
+              <figcaption class="team__member-caption">
+                <p class="team__member-name">CHRISTOPHER CAMPBELL</p>
+                <p class="team__member-role">Branding/UX desing</p>
+              </figcaption>
             </figure>
-            <figcaption class="team__member-caption">
-              <p class="team__member-name">MATTHEW DIX</p>
-              <p class="team__member-role">Graphic Desing</p>
-            </figcaption>
           </li>
           <li class="team__member">
             <figure class="team__member-figure">
               <img
-                src="images/developer.png"
-                alt="Facet który programuje"
-                width="350"
-                height="auto"
+                src="./images/developer.png"
+                alt="Pictoure of meen with beard"
+                srcset="./images/developer@x2.png 2x"
+                class="team__member-image"
               />
+              <div class="team__member-overlay">
+                <ul class="team__member-socials">
+                  <li>
+                    <a href="https://www.facebook.com">
+                      <svg
+                        class="team__svg"
+                        fill="rgba(218, 102, 93)"
+                        height="28"
+                        width="28"
+                      >
+                        <use
+                          xlink:href="./images/icons.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com">
+                      <svg
+                        class="team__svg"
+                        fill="rgba(218, 102, 93)"
+                        height="28"
+                        width="28"
+                      >
+                        <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/">
+                      <svg
+                        class="team__svg"
+                        fill="rgba(218, 102, 93)"
+                        height="28"
+                        width="28"
+                      >
+                        <use
+                          xlink:href="./images/icons.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com">
+                      <svg
+                        class="team__svg"
+                        fill="rgba(218, 102, 93)"
+                        height="28"
+                        width="28"
+                      >
+                        <use
+                          xlink:href="./images/icons.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <figcaption class="team__member-caption">
+                <p class="team__member-name">MICHAEL FERDIG</p>
+                <p class="team__member-role">Developer</p>
+              </figcaption>
             </figure>
-            <figcaption class="team__member-caption">
-              <p class="team__member-name">CHRISTOPHER CAMPBELL</p>
-              <p class="team__member-role">Branding/UX desing</p>
-            </figcaption>
-          </li>
-          <li class="team__member">
-            <figure class="team__member-figure">
-              <img
-                src="images/developer.png"
-                alt="Facet który programuje"
-                width="350"
-                height="auto"
-              />
-            </figure>
-            <figcaption class="team__member-caption">
-              <p class="team__member-name">MICHAEL FERDIG</p>
-              <p class="team__member-role">Developer</p>
-            </figcaption>
           </li>
         </ul>
       </section>
     </main>
     <footer class="footer">
       <section class="footer__section">
-        <p>C 2016 MoGo free PSD template by Laaqiq</p>
-
-        <label for="email" class="footer__section-form" />
-        <input type="email" id="email" placeholder="Your email" />
-        <button class="footer__button" type="submit">SUBSCRIBE</button>
+        <p class="footer__paragraph">
+          © 2016 MoGo free PSD template by
+          <span class="footer__paragraph-author">Laaqiq</span>
+        </p>
+        <div class="footer__section-form">
+          <label for="email">
+            <input type="email" id="email" placeholder="Your email" />
+          </label>
+          <button class="footer__button" type="submit">SUBSCRIBE</button>
+        </div>
       </section>
     </footer>
   </body>

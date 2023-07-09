@@ -1,0 +1,60 @@
+@import "../utils/variables";
+@import "../utils/fonts";
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav-item,
+.header__menu-item {
+  position: relative;
+  text-decoration: none;
+  color: $white;
+}
+
+.header__menu {
+  display: flex;
+  gap: 30px;
+}
+
+.header__menu-item {
+  font-size: $Standard;
+  transition: 250ms;
+  &:hover {
+    color: $yellow;
+  }
+  &:hover::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+    background-color: $yellow;
+  }
+}
+
+.header__svg {
+  cursor: pointer;
+  transition: 250ms;
+  &:hover {
+    fill: $yellow;
+  }
+}
+.header__svg-phone {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .header__section {
+    max-width: 767px;
+  }
+  .header__menu-item {
+    display: none;
+  }
+  .header__svg-phone {
+    display: block;
+  }
+}

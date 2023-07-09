@@ -1,0 +1,56 @@
+section {
+  width: 1200px;
+  margin: 0 auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+body {
+  background-image: linear-gradient($red, $yellow),
+    url(../../images/background.png);
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  background-size: 1600px 700px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  body {
+    background-image: linear-gradient($red, $yellow),
+      url(../../images/background@2x.png);
+  }
+}
+
+@media (max-width: 1200px) {
+  section {
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    background-size: 800px 350px;
+  }
+}
