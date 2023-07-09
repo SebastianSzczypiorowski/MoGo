@@ -26,7 +26,8 @@ label {
 }
 
 body {
-  background-image: linear-gradient($red, $yellow), url(/images/background.png);
+  background-image: linear-gradient($red, $yellow),
+    url(/MoGo/images/background.png);
   background-position: center 0px;
   background-repeat: no-repeat;
   background-size: 1600px 700px;
